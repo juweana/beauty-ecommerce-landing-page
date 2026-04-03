@@ -128,6 +128,15 @@ body {
     left: 5px;
    
 }
+#mobile {     /* responsive ham burger*/
+display: none;
+align-items: center;
+}
+
+#close{
+    display: none;
+}
+
 #hero{
     background-image: url("images/hero/1920-1080.jpg");
     height: 90vh;
@@ -577,4 +586,211 @@ footer a:hover {
 .copyright p {
     color: #465b52;       
     font-size: 14px;
+}
+
+/* medium screen device*/
+
+@media (max-width:799px) { 
+
+    .section-p1 {
+	padding: 40px 40px;
+}
+    #navbar ul {  /*hamburger menu*/
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+	justify-content: flex-start;
+    position: fixed;
+    top: 0;
+    right: -300px; /*to hide the menu*/
+    height: 100vh;
+    width: 300px;
+    background-color: #ffffff;
+    box-shadow: 0 40px 60px rgba(0, 0, 0, 0.01);
+    padding: 80px 0 0 10px;
+    transition: 0.3s;
+}
+ #navbar.active ul { /*js class*/
+    right: 0px;  
+}
+
+#navbar li {
+    margin-bottom: 25px;
+
+}
+#mobile {     /* responsive ham burger*/
+display: flex;
+align-items: center;
+}
+#mobile i{
+    color: #3a2618;
+    font-size: 22px;
+    padding-left: 20px;
+}
+#close{
+    display: initial  ;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #3a2618;
+    font-size: 24px;
+
+}
+#lg-bag{
+    display: none;
+}
+
+#hero {
+	
+	height: 70vh;
+	padding: 0 90px;
+    background-position: top 30% right 30%;
+ }
+
+ #feature {
+	
+	justify-content: center;
+	
+}
+#feature .feat-box {
+	margin: 15px 15px;
+}
+#product-1 .pro-container {
+	
+	justify-content: center;
+	
+}
+#product-1 .pro {
+	
+	margin: 15px;
+	
+}
+
+#sm-banner .banner-box {
+	
+	min-width: 100%;
+	height: 30vh;
+
+}
+#sm-banner .banner-box-2 {
+    min-width: 100%;
+	height: 30vh;
+}
+#banner-3 {
+
+        padding: 0 70px;
+     
+    }
+#banner-3 .banner-box {
+	width: 28%;
+}
+#newsletter .form {
+	
+	width: 60%;
+}
+}
+
+ /* small screen device*/
+
+@media (max-width:477px) {
+
+    .section-p1 {
+	padding: 20px;
+}
+h1 {
+	font-size: 30px;
+	
+}
+
+    #header {
+    padding: 10px 30px;
+	
+}
+#hero h4 {
+	
+	font-size: 32px;
+}
+
+#hero h2 {
+	font-size: 18px;
+	
+}
+#hero h1 {
+	font-size: 42px;
+	
+}
+p {
+	font-size: 12px;
+	
+}
+
+#hero {
+	
+	padding: 0 20px;
+	background-position: 70%;
+}
+#feature {
+	justify-content: space-between;
+}
+
+#feature .feat-box {
+	width: 155px;
+	margin: 0 10px 15px 10px;
+}
+
+#product-1 .pro {
+	width: 100%;
+	
+}
+#banner h2 {
+	
+	font-size: 18px;
+	padding: 0px 20px;
+    margin-bottom: 0;
+    margin-top: 0;
+    line-height: 2;
+}
+#banner {
+
+	height: 40vh;
+
+	
+}
+#sm-banner {
+
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;               /* This creates a perfect equal gap between boxes */
+    padding: 0 20px;         /* This creates the equal outer "frame" */
+    margin-bottom: 10px;
+    box-sizing: border-box;
+	
+    
+}
+
+#sm-banner .banner-box {
+	min-width: 100%;
+	height: 30vh;
+}
+
+#banner-3 {
+	display: flex;
+    justify-content: center; /* Keeps them centered */
+    align-items: center;
+    flex-wrap: nowrap;      /* FORCES them into one line */
+    padding: 0 20px;
+    gap: 10px;
+}
+#banner-3 .banner-box {
+	width: 32%;
+	height: 30vh;
+	flex-shrink: 1;
+}
+#newsletter .form {
+	width: 100%;
+}
+
+
 }
